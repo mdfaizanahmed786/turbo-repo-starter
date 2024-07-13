@@ -1,7 +1,7 @@
 import express from 'express';
 const app=express();
 import{BASE_URL} from "@repo/common/config"
-console.log(BASE_URL);  
+console.log(BASE_URL, "This is base url");  
 app.get('/',(req,res)=>{
     res.send('Hello World');
 });
