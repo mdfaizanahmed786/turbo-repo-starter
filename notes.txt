@@ -1,0 +1,5 @@
+Turbo Json is the file, where it can orchestrate the build system
+It will build the pipeline for the project
+
+@repo can be of any name it may be your project name as well. @repo/ui will be another ui project as well.
+It can be common in all package.json files but it will still detect the @repo/ui folder.

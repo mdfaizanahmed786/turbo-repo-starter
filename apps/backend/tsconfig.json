@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/typescript-config/base.json",  
+  // The above is the reference to the base.json file in the typescript-config package and should be also the same for other nextjs apps or backend apps.
+  "compilerOptions": {
+    "lib": ["ES2015"],
+    "outDir": "./dist"
+  },
+  "exclude": ["node_modules"],
+  "include": ["."]
+}
