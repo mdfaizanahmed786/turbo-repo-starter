@@ -3,3 +3,15 @@ It will build the pipeline for the project
 
 @repo can be of any name it may be your project name as well. @repo/ui will be another ui project as well.
 It can be common in all package.json files but it will still detect the @repo/ui folder.
+
+
+
+In order to share things between multiple projects in the frontend or the backend, you need to create a separate folder like common in packages folder, then you need to tsconfig.json if necessary and an index.ts and you can enter some code there
+
+
+Now, suppose you want to import that code in the backend project, you need can import there.
+
+
+but before that you need to exports in package.json of common module that you are exposing this code to some external module/project.
+
+You can have some dependencies issue or some package issue, you need to use esbuild in order to transpile ts code to js code.

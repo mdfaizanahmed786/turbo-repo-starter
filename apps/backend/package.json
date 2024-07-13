@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"tsc -b && node ./dist/index.js"
+    "dev": "npx esbuild ./index.ts --bundle --platform=node  --outfile=/dist/index.js"
+  },
+  "dependencies": {
+    "@repo/common": "*"
   },
   "keywords": [],
   "author": "",
